@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hsutt-starter"
+version = "0.1.0"
+description = "A beginner-friendly Python project scaffold"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "HsuTT" }
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
